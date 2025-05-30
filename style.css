@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'NotoSans';
+    src: url('/fonts/NotoSans-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: 100 900; /* for variable fonts */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'NotoSans';
+    src: url('/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+  }
+  
+body{
+    font-family: 'NotoSans', sans-serif;
+    background-color: rgb(217, 235, 235);
+    
+}
+.header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0.625em;
+    background-color: white;
+    border-radius:0.625em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#toggle-button{
+    background-color: rgb(238, 234, 234);
+    border-radius:0.825em;
+    padding: 0.625em;
+    object-fit: cover;
+    border: none;
+    cursor: pointer;
+}
+#toggle-button.dark{
+    background-color: rgb(69, 68, 68);
+    border-radius:0.825em;
+    padding: 0.625em;
+    object-fit: cover;
+    border: none;
+    cursor: pointer;
+}
+.activation_button{
+    background-color: white;
+    all: unset;
+    display: inline-block;
+    border: none;
+    border-color: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+.activation_button.dark{
+    background-color:  rgb(46, 40, 67);
+    
+}
+.activation_image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.Extensions-List{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0.625em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.remove-button{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 0.625em;
+    border: 1px solid #c6c9c8;
+    cursor: pointer;
+    border-radius: 0.825em;
+    text-align: center;
+    margin: .4em; 
+}
+.remove-button:hover{
+    background-color: rgb(232, 9, 9);
+    color: white;
+}
+.button{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 0.625em;
+    border: 1px solid #c6c9c8;
+    cursor: pointer;
+    border-radius: 0.825em;
+    text-align: center;
+    margin: .4em;
+}
+.button:hover{
+    background-color: rgb(232, 9, 9);
+    color: white;
+}
+.button-group{
+    display: flex;
+    flex-direction: row;
+    
+}
+.card{
+    background-color: white;
+    border-radius: 0.725em;
+    margin-right: 1%;
+    border: 1px solid #dee4e2;
+}
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.card-tail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5%;
+}
+.card-group{
+    margin-left: 3%;
+    margin-right: 3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+.dark-mode{
+    font-family: 'NotoSans', sans-serif;
+    background-color: rgb(29, 29, 78);
+    color: white;
+}
+.dark-card{
+    background-color: rgb(46, 40, 67);
+    border-radius: 0.725em;
+    margin-right: 1%;
+    border: 1px solid #dee4e2;
+    color: white;
+}
+.dark-header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0.625em;
+    background-color: rgb(46, 40, 67);
+    border-radius:0.625em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.dark-button{
+    background-color: rgb(46, 40, 67);
+    color: white;
+    font-size: 16px;
+    padding: 0.625em;
+    border: 1px solid #c6c9c8;
+    cursor: pointer;
+    border-radius: 0.825em;
+    text-align: center;
+    margin: .4em;
+}
+.dark-button:hover{
+    background-color: rgb(232, 9, 9);
+    color: white;
+}
+.button.selected {
+    background-color: rgb(138, 18, 18);
+    color: white; 
+}
