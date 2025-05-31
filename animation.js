@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
         if (!darkMode) {
-            toggleButton.innerHTML = '<img src="/images/icon-sun.svg" alt="Dark Mode">';
-            logo.src = "/images/logo2.png";
+            toggleButton.innerHTML = '<img src="images/icon-sun.svg" alt="Dark Mode">';
+            logo.src = "images/logo2.png";
         } else {
-            toggleButton.innerHTML = '<img src="/images/icon-moon.svg" alt="Light Mode">';
-            logo.src = "/images/logo.svg";
+            toggleButton.innerHTML = '<img src="images/icon-moon.svg" alt="Light Mode">';
+            logo.src = "images/logo.svg";
         }
 
         darkMode = !darkMode;
@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const image = button.querySelector(".activation_image");
             const filename = image.src.split("/").pop();
             if (filename === "on.png") {
-                image.src = "/images/off.png";
+                image.src = "images/off.png";
             } else {
-                image.src = "/images/on.png";
+                image.src = "images/on.png";
             }
         });
     });
